@@ -8,9 +8,7 @@ public class CeaserCipher {
 	public static void main(String[] args) {
 		
 		CeaserCipher c=new CeaserCipher();
-		StringBuilder en=new StringBuilder();
-		en=c.encryptionAlgorithm(c.input(),3);
-		c.decryptionAlgorithm(en,3);
+		c.decryptionAlgorithm(c.encryptionAlgorithm(c.input(),3),3);
 		
 
 	}
@@ -28,8 +26,11 @@ public class CeaserCipher {
 	}
 	private void decryptionAlgorithm(StringBuilder en, int key) {
 		String s=en.toString();
+		
 		char letters[]=s.toCharArray();
+		
 		StringBuilder decryptedMessage=new StringBuilder();
+		
 		for (int i = 0; i < letters.length; i++) {
 			decryptedMessage.append((char)(byte)(letters[i]-key));
 		}

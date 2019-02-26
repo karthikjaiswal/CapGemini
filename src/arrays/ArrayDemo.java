@@ -3,21 +3,11 @@ package arrays;
 import java.util.Scanner;
 
 public class ArrayDemo {
-
+	
 	public static void main(String[] args) {
 		
 		Scanner sc=new Scanner(System.in);
 		
-		/*int acc[]=new int[5];
-		for (int i = 0; i < acc.length; i++) {
-			System.out.println("enter number");
-			acc[i]=sc.nextInt();
-		}
-		
-		for (int i = 0; i < acc.length; i++) {
-			System.out.println(acc[i]);
-			}
-		*/
 		System.out.println("eneter rows and coloumns");
 		int row=sc.nextInt();
 		int col=sc.nextInt();
@@ -43,6 +33,5 @@ public class ArrayDemo {
 		}
 			
 		}
-		
 
 }
